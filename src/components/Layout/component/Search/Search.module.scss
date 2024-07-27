@@ -1,0 +1,88 @@
+.search {
+    display: flex;
+    position: relative;
+    min-width: 20rem;
+    width: 51.6rem;
+    background: rgba(22, 24, 35, 0.06);
+    padding: 1.2rem 1.6rem;
+    border-radius: 92px;
+    &:focus-within {
+        outline: 1px #ccc solid;
+    }
+}
+.search__result {
+    width: 51.6rem;
+}
+.search__input {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0px;
+    width: 100%;
+    color: rgb(22, 24, 35);
+    caret-color: rgb(254, 44, 85);
+
+    // appearance: textfield;
+}
+.search__input:not(:placeholder-shown) ~ .search__btn {
+    background: rgba(22, 24, 35, 0.06);
+}
+.search__input:not(:placeholder-shown) ~ .search__btn .btn {
+    transition: fill 0.3s ease; // Thêm hiệu ứng chuyển tiếp cho màu fill
+    fill: rgba(22, 24, 35, 1);
+}
+
+.search__delete {
+    position: relative;
+    margin: 0px 12px;
+    outline: none;
+    border: none;
+    transform: translateY(2px);
+
+    // padding-top: ;
+}
+.search__btn {
+    position: relative;
+    padding: 11px 16px 11px 12px;
+    margin: -12px -16px -12px 0;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 0 98px 98px 0;
+    transition: background 0.3s ease; // Thêm hiệu ứng chuyển tiếp cho nền
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 1px;
+        height: 28px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+    &:hover,
+    &:active {
+        background: rgba(22, 24, 35, 0.06);
+    }
+
+    .btn {
+        display: inline-block; // Đảm bảo phần tử có thể được điều chỉnh
+        transition: fill 0.3s ease; // Thêm hiệu ứng chuyển tiếp cho màu fill
+    }
+
+    &:hover .btn {
+        fill: rgba(22, 24, 35, 1); // Thay đổi màu fill khi hover
+    }
+}
+.search__title {
+    height: 30px;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}

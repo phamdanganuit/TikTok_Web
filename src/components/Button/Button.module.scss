@@ -1,0 +1,28 @@
+.wrapper {
+    border-radius: 4px;
+    color: #fff;
+    min-height: 36px;
+    display: flex;
+    font-weight: 900;
+    padding: 6px 8px;
+    min-width: 100px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    line-height: 21px;
+    user-select: none;
+    margin-left: 16px;
+    align-items: center;
+   &.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+   }
+}
+.primary{
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), rgb(254, 44, 85);
+
+    }
+    background-color: rgb(254, 44, 85);
+
+}

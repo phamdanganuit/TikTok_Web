@@ -1,0 +1,60 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --primary: #fe2c55;
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-y:overlay;
+}
+body::-webkit-scrollbar {
+    width: 8px; /* Đặt chiều rộng thanh cuộn */
+    background-color: transparent; /* Trong suốt */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Màu của thanh cuộn */
+    border-radius: 10px; /* Bo tròn các góc */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent; /* Trong suốt */
+  }
+a {
+    text-decoration: none;
+}
+button {
+    outline: none;
+    border: none;
+}
+body {
+    .tippy-box {
+        height: 38px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+}

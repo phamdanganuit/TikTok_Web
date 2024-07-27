@@ -1,0 +1,18 @@
+.wrapper{
+    max-height: min(-156px + 100vh, 760px);
+    min-height: 100px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top:8px;
+    background-color: #fff;
+    overflow-y:auto;
+
+}
+.container::-webkit-scrollbar {
+    width: 12px; /* Đặt chiều rộng thanh cuộn */
+    background-color: transparent; /* Trong suốt */
+}
