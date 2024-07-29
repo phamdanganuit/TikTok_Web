@@ -1,0 +1,73 @@
+.account {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(22, 24, 35, 0.05);
+    }
+}
+.account__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    margin-right: 12px;
+    justify-content: center;
+}
+.user_name {
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: -2px;
+    max-width: 145px;
+    text-overflow: ellipsis;
+}
+.full_name {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 145px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.label {
+    padding: 0px 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+.wrapper {
+    margin-top: 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 8px;
+        right: 16px;
+        top: -24px;
+        background: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+    }
+    & button {
+        background: transparent;
+        border: none;
+        padding: 0px 8px;
+        margin-top: 8px;
+        cursor: pointer;
+        color: rgb(254, 44, 85);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        transform: translateX(-66px);
+    }
+}

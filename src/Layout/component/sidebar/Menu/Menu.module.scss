@@ -1,0 +1,28 @@
+
+.menu__item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 32px;
+    transition: background-color 200ms ease-in-out 0s;
+    &:hover{
+        background: rgba(22, 24, 35,0.05);
+    }
+    &.active .title{
+        color:rgba(254, 44, 85, 1);
+    }
+    &.active svg{
+        fill:rgba(254, 44, 85, 1)
+
+    }
+}
+.title{
+    color: rgb(22, 24, 35);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 8px;
+}

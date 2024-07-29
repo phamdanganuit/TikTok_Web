@@ -14,6 +14,10 @@ import { ReactComponent as CoinLogo} from './coin.svg';
 import { ReactComponent as CreateToolLogo} from './createtool.svg';
 import { ReactComponent as SettingLogo} from './setting.svg';
 import { ReactComponent as LogOutLogo} from './logout.svg';
+import { ReactComponent as HomeLogo} from './home.svg';
+import { ReactComponent as ExploreLogo} from './explore.svg';
+import { ReactComponent as FollowingLogo} from './following.svg';
+
 const svgs = {
     Logo,
     DeleteLogo,
@@ -31,6 +35,9 @@ const svgs = {
     CreateToolLogo,
     SettingLogo,
     LogOutLogo,
+    HomeLogo,
+    ExploreLogo,
+    FollowingLogo,
 };
 
 export default svgs;
