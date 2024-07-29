@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 
-import svgs from '../../../../assets/svgs';
+import svgs from '../../../assets/svgs';
 const cx = classNames.bind(styles);
 
 function Header({ title, onBack }) {

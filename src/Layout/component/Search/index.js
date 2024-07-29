@@ -1,12 +1,12 @@
-import AccountItem from '../../../AccountItem';
+import AccountItem from '../../../components/AccountItem';
 import { Wrapper as PopperWrapper } from '../../Popper';
 import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
-import svgs from '../../../../assets/svgs';
-import request from '../../../../utils/request';
+import svgs from '../../../assets/svgs';
+import request from '../../../utils/request';
 import { useState, useRef, useEffect } from 'react';
-import { useDebounce } from '../../../../hooks';
+import { useDebounce } from '../../../hooks';
 import axios from 'axios';
 const cx = classNames.bind(styles);
 
@@ -61,6 +61,7 @@ function Search() {
         <HeadlessTippy
             visible={showResults && searchResults.length > 0}
             interactive
+            appendTo={document.body}
             delay={[0, 300]}
             onClickOutside={handleHideResults}
             render={(attrs) => (

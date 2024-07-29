@@ -2,14 +2,13 @@ import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import styles from './Header.module.scss';
-import svgs from '../../../../assets/svgs';
-
-import Button from '../../../Button';
+import svgs from '../../../assets/svgs';
+import Button from'../../../components/Button'
 import Menu from '../../Popper/Menu';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Search from '../Search';
-import routesConfig from '../../../../config/routes';
+import routesConfig from '../../../config/routes';
 const cx = classNames.bind(styles);
 
 const handleOnchange = (MENUITEM) => {
